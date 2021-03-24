@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressening the buttons.
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1), lightButton(1)" onmouseup="stopTone(), clearButton(1)"><img id="img1" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2FPNG%20image.png?v=1616223367524" width="150px" height="150px"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2), lightButton(2)" onmouseup="stopTone(), clearButton(2)"><img id="img2" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2FPNG%20image%205.png?v=1616223375282" width="150px" height="150px"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3), lightButton(3)" onmouseup="stopTone(), clearButton(3)"><img id="img3" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2Fwp6296493.png?v=1616223418625" width="150px" height="150px"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4), lightButton(4)" onmouseup="stopTone(), clearButton(4)"><img id="img4" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2Fmars-landscape-background-with-flat-design_23-2147979445.jpeg?v=1616276589577" width="150px" height="150px"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5), lightButton(5)" onmouseup="stopTone(), clearButton(5)"><img id="img5" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2FPNG%20image%206.png?v=1616223909205" width="150px" height="150px"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6), lightButton(6)" onmouseup="stopTone(), clearButton(6)"><img id="img6" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2FScreen%20Shot%202021-03-20%20at%205.43.52%20PM.png?v=1616276645502" width="150px" height="150px"></button>
+      <button id="button7" onclick="guess(7)" onmousedown="startTone(7), lightButton(7)" onmouseup="stopTone(), clearButton(7)"><img id="img7" class="hidden" src="https://cdn.glitch.com/7f0c4aeb-801a-41b3-98fe-c47419b0cdf9%2FScreen%20Shot%202021-03-20%20at%205.44.42%20PM.png?v=1616276695590" width="150px" height="150px"></button>
+    </div>
+    
+  </body>
+</html>
+
+
